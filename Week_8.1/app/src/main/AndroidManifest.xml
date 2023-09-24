@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Week_9"
         tools:targetApi="31">
         <activity
+            android:name=".Signup_next_page"
+            android:exported="false" />
+        <activity
             android:name=".Signup_page"
             android:exported="false" />
         <activity
