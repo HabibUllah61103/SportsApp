@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:padding="3dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/searchimg"
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_icon"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/searchimg"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/purple_700"
+            android:textSize="15sp"
+            android:text="Searched_item"
+            android:id="@+id/txt"/>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/searchimg"
+            android:singleLine="true"
+            android:text="Searched_item"
+            android:textColor="@color/purple_700"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/txt2"
+            android:layout_toRightOf="@id/searchimg"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/purple_700"
+            android:textSize="15dp"
+            android:text="Searched_item"
+            android:visibility="gone"
+            android:id="@+id/txt3"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

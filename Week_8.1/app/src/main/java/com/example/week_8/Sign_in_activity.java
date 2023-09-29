@@ -18,7 +18,7 @@ public class Sign_in_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-        Intent login =getIntent();
+        getIntent();
         email = findViewById(R.id.sigin_email);
         password = findViewById(R.id.sigin_password);
     }
@@ -44,7 +44,7 @@ public class Sign_in_activity extends AppCompatActivity {
         if (isAuthenticated) {
             // User authenticated successfully
             Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show();
-            Intent discover = new Intent(this, Discover_page.class);
+            Intent discover = new Intent(this, NewsDetailActivity.class);
             discover.putExtra("username", username);
             startActivity(discover);
             finish();

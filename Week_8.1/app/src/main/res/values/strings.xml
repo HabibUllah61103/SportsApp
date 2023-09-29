@@ -6,7 +6,14 @@
     <string name="email">Enter Your Email</string>
     <string name="name">Enter Your Name</string>
     <string name="next_button">Next</string>
-    <string name="app_title">Welcome to
-        Sportlife</string>
+    <string name="app_title">Sportism</string>
+    <string name="signin">Sign In Here</string>
+    <string name="signup">Register Here</string>
+    <string name="discover">Discover</string>
+    <string name="news">Latest Jerseys</string>
+    <string name="more">View More</string>
+    <string name="devname">Developed By: Sanjay</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

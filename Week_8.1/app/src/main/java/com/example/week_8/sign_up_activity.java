@@ -14,7 +14,7 @@ public class sign_up_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        Intent signup =getIntent();
+        getIntent();
     }
 
     public void signup_next_click(View view) {

@@ -1,12 +1,12 @@
 package com.example.week_8;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -20,9 +20,8 @@ public class Signup_next_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_next_page);
         UserManager userManager = UserManager.getInstance();
-        users = userManager.getUsers();  // Get the shared list of users
+        users = userManager.getUsers();
 
-        // If the shared list of users is empty, initialize with pre-existing users
         if (users.isEmpty()) {
             ArrayList<User> preExistingUsers = initializeUsers();
             users.addAll(preExistingUsers);
@@ -30,9 +29,9 @@ public class Signup_next_page extends AppCompatActivity {
     }
 
 
-    public void signup_final_click (View view){
+    public void signup_final_click(View view) {
         name = findViewById(R.id.signup_name);
-        Intent signup_next =getIntent();
+        Intent signup_next = getIntent();
         String email = signup_next.getStringExtra("email");
         String password = signup_next.getStringExtra("password");
         String enteredname = name.getText().toString();
@@ -56,7 +55,6 @@ public class Signup_next_page extends AppCompatActivity {
         ArrayList<User> users = new ArrayList<>();
         users.add(new User("habib@email.com", "password1", "habib"));
         users.add(new User("maaz@email.com", "password2", "maaz"));
-        // ... add other pre-existing users
         return users;
     }
 }

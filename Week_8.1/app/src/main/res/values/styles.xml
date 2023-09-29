@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyAppBarLayoutTheme"></style>
+    <style name="YourActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Other attributes -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- other style items -->
+    </style>
+</resources>
+
